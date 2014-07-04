@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-sngs-frontend' ]; then cd .. && eval "mv $currentfolder generator-sngs-frontend" && cd generator-sngs-frontend; fi
+
